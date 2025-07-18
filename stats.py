@@ -1,3 +1,4 @@
+
 def word_count(book):
     split_content = book.split()
     count = 0

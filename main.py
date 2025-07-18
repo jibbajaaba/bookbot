@@ -7,7 +7,9 @@ def get_book_text(file_path):
 
 frankenstein = "./books/frankenstein.txt"
 
+text = get_book_text(frankenstein)
+
 def main():
-    print(word_count(get_book_text(frankenstein)))
+    print(word_count(text))
 
 main()
