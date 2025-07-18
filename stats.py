@@ -6,3 +6,24 @@ def word_count(book):
         if word:
             count += 1
     return f"{count} words found in the document"
+
+def char_count(words):
+    char_dict = {}
+    lower_case_text = words.lower()
+    for char in lower_case_text:
+        if char in char_dict:
+            char_dict[char] += 1
+        else:
+            char_dict[char] = 1
+    return char_dict
+
+def sort_on(items):
+    return items["num"]
+
+def char_sort(dict):
+    list_of_char = []
+    for key, value in dict.items():
+        if key.isalpha():
+            list_of_char.append({"char": key, "num": value})
+    list_of_char.sort(reverse=True, key=sort_on)
+    return list_of_char
