@@ -5,7 +5,7 @@ def word_count(book):
     for word in split_content:
         if word:
             count += 1
-    return f"{count} words found in the document"
+    return f"Found {count} total words"
 
 def char_count(words):
     char_dict = {}
@@ -26,4 +26,5 @@ def char_sort(dict):
         if key.isalpha():
             list_of_char.append({"char": key, "num": value})
     list_of_char.sort(reverse=True, key=sort_on)
-    return list_of_char
+    for char in list_of_char:
+        print(f"{char['char']}: {char['num']}")

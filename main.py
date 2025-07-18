@@ -11,8 +11,11 @@ text = get_book_text(frankenstein)
 char_dict = char_count(text)
 
 def main():
+    print("============ BOOKBOT ============")
+    print("Analyzing book found at books/frankenstein.txt...")
+    print("----------- Word Count ----------")
     print(word_count(text))
-    print(char_count(text))
-    print(char_sort(char_dict))
+    print("--------- Character Count -------")
+    char_sort(char_dict)
 
 main()
