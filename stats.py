@@ -7,6 +7,7 @@ def word_count(book):
             count += 1
     return f"Found {count} total words"
 
+
 def char_count(words):
     char_dict = {}
     lower_case_text = words.lower()
@@ -17,8 +18,10 @@ def char_count(words):
             char_dict[char] = 1
     return char_dict
 
+
 def sort_on(items):
     return items["num"]
+
 
 def char_sort(dict):
     list_of_char = []

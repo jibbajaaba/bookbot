@@ -1,10 +1,12 @@
 from stats import word_count, char_count, char_sort
 import sys
 
+
 def get_book_text(file_path):
     with open(file_path) as f:
         contents = f.read()
     return contents
+
 
 def main(book):
     if len(book) == 2:
